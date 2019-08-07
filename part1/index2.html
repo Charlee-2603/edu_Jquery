@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#id-btn").click(function () {
+                alert($("#input1").val());
+            });
+            $("#id-btn").click(function () {
+                alert($("#id-div").html());
+            })
+        })
+    </script>
+</head>
+<button id="id-btn">取值</button>
+<br>
+<br>
+<input type="text" id="input1" value="默认值">
+<div id="id-div">
+    这里是div
+    <span>这是div里的span</span>
+</div>
+</body>
+</html>

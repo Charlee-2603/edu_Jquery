@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#id-btn-alone").click(function () {
+                $("#id-div-one").css("background-color", "pink");
+            });
+            $("#id-btn-many").click(function () {
+                $("#id-div-two").css({"background-color": "pink", "color": "green"});
+            });
+        })
+    </script>
+</head>
+<body>
+<button id="id-btn-alone">设置单一样式</button>
+<button id="id-btn-many">设置多种样式</button>
+<div id="id-div-one">
+    Hello JQuery
+</div>
+<div id="id-div-two">
+    Hello JQuery!!!
+</div>
+</body>
+</html>

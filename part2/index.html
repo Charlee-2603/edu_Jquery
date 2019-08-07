@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .pink {
+            background-color: pink;
+        }
+    </style>
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            // 添加样式
+            $("#id-btn-add").click(function () {
+                $("#id-div").addClass("pink");
+            });
+
+            // 移除样式
+            $("#id-btn-del").click(function () {
+                $("#id-div").removeClass("pink");
+            });
+
+            // 切换样式
+            $("#id-btn-switch").click(function () {
+                $("#id-div").toggleClass("pink");
+            });
+        })
+    </script>
+</head>
+<body>
+<button id="id-btn-add">增加背景颜色</button>
+<button id="id-btn-del">增加背景颜色</button>
+<button id="id-btn-switch">切换背景颜色</button>
+<div id="id-div">
+    Hello JQuery
+</div>
+</body>
+</html>
